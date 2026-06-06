@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUGPAENG PET WORLD</title>
+  <style>
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body { margin: 0; font-family: Arial, sans-serif; color: #063f2d; background: #fff8ea; }
+    header { position: sticky; top: 0; z-index: 10; background: #063f2d; color: white; padding: 14px 20px; box-shadow: 0 4px 16px rgba(0,0,0,.15); }
+    .nav { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand { font-size: 22px; font-weight: bold; color: #d9931f; }
+    .menu a { color: white; text-decoration: none; margin-left: 14px; font-size: 14px; font-weight: bold; }
+    .hero { background: linear-gradient(160deg, #063f2d, #0b5a3f); color: white; padding: 70px 20px; text-align: center; }
+    .hero h1 { font-size: 42px; margin: 0 0 12px; color: #d9931f; }
+    .hero p { font-size: 20px; margin: 0 auto 28px; max-width: 720px; line-height: 1.6; }
+    .btn-group { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 14px 22px; border-radius: 999px; text-decoration: none; font-weight: bold; font-size: 16px; }
+    .btn-gold { background: #d9931f; color: white; }
+    .btn-light { background: white; color: #063f2d; }
+    section { padding: 56px 20px; }
+    .container { max-width: 1100px; margin: auto; }
+    .section-title { text-align: center; font-size: 30px; margin-bottom: 12px; color: #063f2d; }
+    .section-subtitle { text-align: center; color: #666; margin-bottom: 34px; line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: white; border-radius: 24px; padding: 24px; box-shadow: 0 8px 24px rgba(0,0,0,.08); border: 1px solid #f0dfbd; }
+    .card h3 { margin-top: 0; color: #063f2d; font-size: 22px; }
+    .card p { color: #555; line-height: 1.6; }
+    .icon { font-size: 42px; margin-bottom: 12px; }
+    .promo { background: #063f2d; color: white; }
+    .promo .section-title { color: #d9931f; }
+    .promo .section-subtitle { color: #fff8ea; }
+    .promo .card { background: #fff8ea; }
+    .about { background: #fff3d9; }
+    .about-box { background: white; border-radius: 28px; padding: 30px; max-width: 850px; margin: auto; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,.08); line-height: 1.8; font-size: 18px; }
+    .contact-list { max-width: 720px; margin: auto; background: white; border-radius: 28px; padding: 28px; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .contact-item { padding: 12px 0; border-bottom: 1px solid #f0dfbd; font-size: 17px; }
+    .contact-item:last-child { border-bottom: none; }
+    footer { background: #063f2d; color: white; text-align: center; padding: 24px 20px; font-size: 14px; }
+    .floating-line { position: fixed; right: 18px; bottom: 18px; background: #06c755; color: white; text-decoration: none; padding: 14px 18px; border-radius: 999px; font-weight: bold; box-shadow: 0 8px 24px rgba(0,0,0,.25); z-index: 20; }
+    @media (max-width: 768px) {
+      .nav { flex-direction: column; }
+      .menu { text-align: center; }
+      .menu a { display: inline-block; margin: 6px; }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 17px; }
+      .grid { grid-template-columns: 1fr; }
+      section { padding: 42px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">🐾 HUGPAENG</div>
+    <div class="menu">
+      <a href="#home">หน้าแรก</a>
+      <a href="#products">สินค้า</a>
+      <a href="#promotions">โปรโมชั่น</a>
+      <a href="#about">เกี่ยวกับเรา</a>
+      <a href="#contact">ติดต่อเรา</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <h1>HUGPAENG PET WORLD</h1>
+  <p>อาหารและอุปกรณ์สัตว์เลี้ยง คัดสรรด้วยความรัก เพื่อเพื่อนตัวน้อยของคุณ พร้อมบริการที่ดูแลด้วยหัวใจ</p>
+
+  <div class="btn-group">
+    <a class="btn btn-gold" href="https://line.me/R/ti/p/@425zvdvm" target="_blank">สั่งซื้อผ่าน LINE</a>
+    <a class="btn btn-light" href="https://member.hug-paeng.com">เข้าสู่ระบบสมาชิก</a>
+  </div>
+</section>
+
+<section id="products">
+  <div class="container">
+    <h2 class="section-title">หมวดสินค้า</h2>
+    <p class="section-subtitle">สินค้าเพื่อสุนัข แมว และสัตว์เลี้ยงที่คุณรัก</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🐶</div><h3>สินค้าสุนัข</h3><p>อาหาร ขนม ยากันเห็บหมัด แชมพู สายจูง และอุปกรณ์ดูแลสุนัข</p></div>
+      <div class="card"><div class="icon">🐱</div><h3>สินค้าแมว</h3><p>อาหารเม็ด อาหารเปียก ทรายแมว ขนมแมวเลีย และของใช้สำหรับแมว</p></div>
+      <div class="card"><div class="icon">🐾</div><h3>บริการสัตว์เลี้ยง</h3><p>สินค้าแนะนำ โปรแกรมสมาชิก Pet Hotel และบริการดูแลสัตว์เลี้ยงในอนาคต</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="promo" id="promotions">
+  <div class="container">
+    <h2 class="section-title">โปรโมชั่น</h2>
+    <p class="section-subtitle">โปรดีสำหรับสมาชิก HUGPAENG FAMILY</p>
+    <div class="grid">
+      <div class="card"><h3>🎁 สมัครสมาชิก</h3><p>รับสิทธิ์สะสมคะแนน ดูข้อมูลสมาชิก และรับโปรโมชันพิเศษผ่าน LINE OA</p></div>
+      <div class="card"><h3>💳 คะแนนสะสม</h3><p>ซื้อสินค้ากับ HUGPAENG สะสมคะแนนเพื่อรับสิทธิพิเศษและเลื่อนระดับสมาชิก</p></div>
+      <div class="card"><h3>🏷️ โปรประจำเดือน</h3><p>ติดตามโปรโมชันอาหารสัตว์ ขนม ของใช้ และบริการสัตว์เลี้ยงได้ทาง LINE OA</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title">เกี่ยวกับเรา</h2>
+    <div class="about-box">
+      <p>“ฮักแพง” หมายถึง ความรัก ความเอาใจใส่ และความผูกพัน เราตั้งใจคัดสรรสินค้าและบริการสำหรับสัตว์เลี้ยงทุกตัว ให้เหมือนเป็นสมาชิกคนสำคัญของครอบครัว</p>
+      <p>HUGPAENG PET WORLD เติบโตจากความตั้งใจที่จะสร้างพื้นที่ที่เจ้าของสัตว์เลี้ยงไว้วางใจได้ ทั้งด้านสินค้า บริการ และประสบการณ์ที่อบอุ่น</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">ติดต่อเรา</h2>
+    <p class="section-subtitle">สั่งซื้อ สอบถามสินค้า หรือติดตามโปรโมชันได้ที่ LINE OA</p>
+    <div class="contact-list">
+      <div class="contact-item">📍 พื้นที่ให้บริการ: จังหวัดกาฬสินธุ์ และพื้นที่ใกล้เคียง</div>
+      <div class="contact-item">💬 LINE OA: <a href="https://line.me/R/ti/p/@425zvdvm" target="_blank">@425zvdvm</a></div>
+      <div class="contact-item">🐾 ระบบสมาชิก: <a href="https://member.hug-paeng.com">member.hug-paeng.com</a></div>
+      <div class="contact-item">🌐 เว็บไซต์: hug-paeng.com</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 HUGPAENG PET WORLD. All rights reserved.
+</footer>
+
+<a class="floating-line" href="https://line.me/R/ti/p/@425zvdvm" target="_blank">สั่งซื้อผ่าน LINE</a>
+
+</body>
+</html>
