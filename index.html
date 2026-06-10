@@ -131,51 +131,34 @@ header{
   font-weight:bold;
 }
 
-.hero{
+.hero-banner{
   max-width:1180px;
-  margin:36px auto;
+  margin:34px auto 28px;
   padding:0 22px;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:28px;
-  align-items:center;
 }
 
-.hero-card{
-  background:white;
+.hero-banner-card{
+  position:relative;
+  overflow:hidden;
   border-radius:36px;
-  padding:44px;
-  box-shadow:0 18px 45px rgba(70,50,30,.10);
   border:1px solid #eadcc8;
+  box-shadow:0 18px 45px rgba(70,50,30,.12);
+  background:white;
 }
 
-.badge{
-  display:inline-block;
-  background:#eef4ec;
-  color:var(--green);
-  padding:8px 14px;
-  border-radius:999px;
-  font-weight:bold;
-  font-size:14px;
+.hero-banner-card img{
+  display:block;
+  width:100%;
+  height:auto;
 }
 
-h1{
-  font-size:48px;
-  line-height:1.15;
-  color:var(--green);
-  margin:18px 0 14px;
-}
-
-p{
-  font-size:18px;
-  line-height:1.7;
-}
-
-.cta{
+.hero-mobile-actions{
   display:flex;
   gap:12px;
   flex-wrap:wrap;
-  margin-top:24px;
+  justify-content:center;
+  margin:18px auto 0;
+  padding:0 22px;
 }
 
 .btn{
@@ -194,19 +177,6 @@ p{
 .btn-soft{
   background:var(--beige);
   color:var(--brown);
-}
-
-.illustration{
-  background:linear-gradient(180deg,#fff,#f6eadb);
-  border-radius:36px;
-  padding:34px;
-  text-align:center;
-  border:1px solid #eadcc8;
-}
-
-.illustration img{
-  width:180px;
-  max-width:70%;
 }
 
 .cards{
@@ -231,6 +201,11 @@ p{
   margin:8px 0;
 }
 
+.service p{
+  font-size:17px;
+  line-height:1.7;
+}
+
 footer{
   background:#f3e4cf;
   padding:28px 22px;
@@ -253,16 +228,16 @@ footer{
     right:auto;
   }
 
-  .hero{
-    grid-template-columns:1fr;
-  }
-
-  h1{
-    font-size:36px;
-  }
-
   .cards{
     grid-template-columns:1fr;
+  }
+
+  .hero-banner{
+    margin-top:22px;
+  }
+
+  .hero-banner-card{
+    border-radius:24px;
   }
 }
 </style>
@@ -352,26 +327,15 @@ footer{
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-card">
-    <span class="badge">🐾 Cozy Pet Care</span>
-    <h1>ฮักแพง<br>ดูแลสัตว์เลี้ยงด้วยใจ</h1>
-    <p>
-      ศูนย์รวมสินค้า บริการ และโรงแรมสัตว์เลี้ยงสำหรับครอบครัวคนรักน้องหมา–น้องแมว
-      ในบรรยากาศอบอุ่น เรียบง่าย และเป็นมิตร
-    </p>
-
-    <div class="cta">
-      <a class="btn btn-primary" href="https://hotel.hug-paeng.com">จองโรงแรมแมว</a>
-      <a class="btn btn-soft" href="#products">ดูสินค้า</a>
-      <a class="btn btn-soft" href="#register">สมัครสมาชิก</a>
-    </div>
+<section class="hero-banner">
+  <div class="hero-banner-card">
+    <img src="homebanner.png" alt="HUGPAENG Pet Care & Lifestyle">
   </div>
 
-  <div class="illustration">
-    <img src="logo.png" alt="HUGPAENG">
-    <h2 style="color:var(--green)">Pet Mart • Pet Hotel • Member</h2>
-    <p>ทุกบริการของฮักแพง รวมไว้ในที่เดียว</p>
+  <div class="hero-mobile-actions">
+    <a class="btn btn-primary" href="https://hotel.hug-paeng.com">จองโรงแรมแมว</a>
+    <a class="btn btn-soft" href="#products">ดูสินค้า</a>
+    <a class="btn btn-soft" href="#register">สมัครสมาชิก</a>
   </div>
 </section>
 
